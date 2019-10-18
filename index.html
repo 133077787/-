@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>页面顶端导航栏</title>
+    <script>
+        window.onload = function() {
+            var nav = document.getElementsByClassName("nav")[0];
+            window.onscroll = function() {
+                if (window.pageYOffset > 100) {
+                    nav.style.background = "#3498db";
+                    nav.style.boxShadow = "0px 4px 2px #2980b9";
+                } else {
+                    nav.style.background = "transparent";
+                    nav.style.boxShadow = "none";
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <dir class="header">
+        <div class="nav">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">info</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+        </div>
+    </dir>
+    <div class="box"></div>
+</body>
+
+</html>
